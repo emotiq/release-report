@@ -17,7 +17,7 @@
       (dolist (release (provided-releases (dist dist-name)))
         (format stream "<tr><td valign=top><nobr>~A</nobr></td>"
                 (prefix release))
-        (format stream "<td>~{~A~^, ~}</td></tr>"
+        (format stream "<td>~{~A~^, ~}</td></tr>~%"
                 (remove-duplicates
                  (mapcar 'name
                          (provided-systems release))
