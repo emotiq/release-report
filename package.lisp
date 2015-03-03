@@ -1,5 +1,6 @@
 ;;;; package.lisp
 
 (defpackage #:release-report
-  (:use #:cl #:ql-dist))
+  (:use #:cl #:ql-dist)
+  (:export #:release-report))
 
